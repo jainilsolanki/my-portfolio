@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #020617;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* LOADER STYLES */
+
+@keyframes twinkle {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.5;
+  }
+}
+
+.dot-bricks {
+  position: relative;
+  top: 8px;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #06b6d4;
+  color: #06b6d4;
+  box-shadow: 9991px -16px 0 0 #06b6d4, 9991px 0 0 0 #06b6d4,
+    10007px 0 0 0 #06b6d4;
+  animation: dot-bricks 2s infinite ease;
+}
+
+@keyframes dot-bricks {
+  0% {
+    box-shadow: 9991px -16px 0 0 #06b6d4, 9991px 0 0 0 #06b6d4,
+      10007px 0 0 0 #06b6d4;
+  }
+  8.333% {
+    box-shadow: 10007px -16px 0 0 #06b6d4, 9991px 0 0 0 #06b6d4,
+      10007px 0 0 0 #06b6d4;
+  }
+  16.667% {
+    box-shadow: 10007px -16px 0 0 #06b6d4, 9991px -16px 0 0 #06b6d4,
+      10007px 0 0 0 #06b6d4;
+  }
+  25% {
+    box-shadow: 10007px -16px 0 0 #06b6d4, 9991px -16px 0 0 #06b6d4,
+      9991px 0 0 0 #06b6d4;
+  }
+  33.333% {
+    box-shadow: 10007px 0 0 0 #06b6d4, 9991px -16px 0 0 #06b6d4,
+      9991px 0 0 0 #06b6d4;
+  }
+  41.667% {
+    box-shadow: 10007px 0 0 0 #06b6d4, 10007px -16px 0 0 #06b6d4,
+      9991px 0 0 0 #06b6d4;
+  }
+  50% {
+    box-shadow: 10007px 0 0 0 #06b6d4, 10007px -16px 0 0 #06b6d4,
+      9991px -16px 0 0 #06b6d4;
+  }
+  58.333% {
+    box-shadow: 9991px 0 0 0 #06b6d4, 10007px -16px 0 0 #06b6d4,
+      9991px -16px 0 0 #06b6d4;
+  }
+  66.666% {
+    box-shadow: 9991px 0 0 0 #06b6d4, 10007px 0 0 0 #06b6d4,
+      9991px -16px 0 0 #06b6d4;
+  }
+  75% {
+    box-shadow: 9991px 0 0 0 #06b6d4, 10007px 0 0 0 #06b6d4,
+      10007px -16px 0 0 #06b6d4;
+  }
+  83.333% {
+    box-shadow: 9991px -16px 0 0 #06b6d4, 10007px 0 0 0 #06b6d4,
+      10007px -16px 0 0 #06b6d4;
+  }
+  91.667% {
+    box-shadow: 9991px -16px 0 0 #06b6d4, 9991px 0 0 0 #06b6d4,
+      10007px -16px 0 0 #06b6d4;
+  }
+  100% {
+    box-shadow: 9991px -16px 0 0 #06b6d4, 9991px 0 0 0 #06b6d4,
+      10007px 0 0 0 #06b6d4;
+  }
+}
+
+text {
+  fill: white;
+  text-transform: uppercase;
+  font-variant-ligatures: none;
+  letter-spacing: 6px;
+  animation: rotate 25s linear infinite;
+  transform-origin: 250px 250px;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.textcircle {
+  transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+  transform-origin: 250px 250px;
+  transform: scale(1.35);
+}
+
+svg:hover defs + path {
+  stroke: black;
+}
+
+.stroke-path {
+  transition: stroke 300ms ease-in-out;
+}

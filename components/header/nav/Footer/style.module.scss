@@ -1,0 +1,17 @@
+.footer {
+  .header {
+    color: rgb(153, 153, 153);
+    border-bottom: 1px solid rgb(153, 153, 153);
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-bottom: 40px;
+  }
+  .list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 12px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
