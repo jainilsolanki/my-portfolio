@@ -84,13 +84,13 @@ export default function Skills() {
               progress={scrollYProgress}
               words={[
                 "https://avatars.githubusercontent.com/u/44914786?v=4",
-                "https://starlight.astro.build/_astro/hero-star.CRrHICv4_Zc4Kge.webp",
+                "https://starlight.astro.build/_astro/hero-star.CRrHICv4_1oHYTB.webp",
                 "https://user-images.githubusercontent.com/3104648/28351989-7f68389e-6c4b-11e7-9bf2-e9fcd4977e7a.png",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/2048px-Electron_Software_Framework_Logo.svg.png",
                 "https://seeklogo.com/images/R/react-query-logo-1340EA4CE9-seeklogo.com.png",
                 "https://tanstack.com/_build/assets/logo-color-600w-Bx4vtR8J.png",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png",
-              ]} 
+              ]}
             />
           </div>
         </main>
