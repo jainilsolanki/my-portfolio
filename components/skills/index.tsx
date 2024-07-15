@@ -90,7 +90,7 @@ export default function Skills() {
                 "https://seeklogo.com/images/R/react-query-logo-1340EA4CE9-seeklogo.com.png",
                 "https://tanstack.com/_build/assets/logo-color-600w-Bx4vtR8J.png",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png",
-              ]}
+              ]} 
             />
           </div>
         </main>
