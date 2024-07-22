@@ -18,7 +18,7 @@ export function AboutLinks() {
       <p className="text-neutral-400 text-xl md:text-3xl max-w-3xl  text-left mb-10">
         Passionate{" "}
         <LinkPreview
-          url="/resume.pdf"
+          url="/JAINIL SOLANKI.pdf"
           imageSrc="/resume-preview-icon.png"
           className="font-bold"
           isStatic
