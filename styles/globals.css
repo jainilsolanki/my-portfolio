@@ -128,5 +128,8 @@ svg:hover defs + path {
 
 .notistack-MuiContent {
   flex-wrap: nowrap !important;
+}
+
+.notistack-MuiContent-info {
   background-color: #313131 !important;
 }

@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import { Alert, Snackbar } from "@mui/material";
 import Loader from "@/components/loader.component";
 import {
   BottomGradient,
@@ -17,26 +16,11 @@ import {
   LINKEDIN,
 } from "@/data/constants.data";
 import { downloadPdf } from "@/data/utils";
+import { enqueueSnackbar } from "notistack";
 
 export function ContactComponent() {
   const [loading, setLoading] = useState(false);
-  const [snackbarData, setSnackbarData] = useState({
-    open: false,
-    status: "info",
-  });
 
-  const handleClick = (status: string) => {
-    setSnackbarData({ open: true, status: status });
-  };
-  const handleClose = (
-    event: React.SyntheticEvent | Event,
-    reason?: string
-  ) => {
-    if (reason === "clickaway") {
-      return;
-    }
-    setSnackbarData({ open: false, status: "info" });
-  };
   const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log("Form submitted", e.target);
@@ -52,12 +36,15 @@ export function ContactComponent() {
         (result: any) => {
           // console.log(result);
           e.target.reset();
-          handleClick("success");
+          enqueueSnackbar("Message Received", { variant: "success" });
           setLoading(false);
         },
         (error: any) => {
           console.error(error);
-          handleClick("error");
+          enqueueSnackbar(
+            "Unable to connect! Please try again or check back soon...",
+            { variant: "error" }
+          );
           setLoading(false);
         }
       );
@@ -347,31 +334,6 @@ export function ContactComponent() {
           </a>
         </div>
       </div>
-      <Snackbar
-        open={snackbarData.open}
-        autoHideDuration={6000}
-        onClose={handleClose}
-      >
-        {snackbarData.status == "error" ? (
-          <Alert
-            onClose={handleClose}
-            severity="error"
-            variant="filled"
-            sx={{ width: "100%" }}
-          >
-            Unable to connect! Please try again or check back soon...
-          </Alert>
-        ) : (
-          <Alert
-            onClose={handleClose}
-            severity="success"
-            variant="filled"
-            sx={{ width: "100%" }}
-          >
-            Message Received
-          </Alert>
-        )}
-      </Snackbar>
 
       {loading && <Loader />}
     </div>

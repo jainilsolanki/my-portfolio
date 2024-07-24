@@ -26,15 +26,16 @@ export default function Preloader() {
     setDimension({ width: window.innerWidth, height: window.innerHeight });
     router.push("/");
     if (detectMobile()) {
-      enqueueSnackbar(
-        "For the best experience, checkout my portfolio on larger screens.",
-        {
-          persist: true,
-          variant: "info",
-        }
-      );
+      setTimeout(() => {
+        enqueueSnackbar(
+          "For the best experience, checkout my portfolio on larger screens.",
+          {
+            persist: true,
+            variant: "info",
+          }
+        );
+      }, 6000);
     }
-    console.log(detectMobile());
   }, []);
 
   useEffect(() => {

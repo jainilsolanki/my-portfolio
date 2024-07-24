@@ -69,6 +69,10 @@ export default function Home() {
         action={(snackbarKey) => (
           <SnackbarCloseButton snackbarKey={snackbarKey} />
         )}
+        anchorOrigin={{
+          vertical: "bottom",
+          horizontal: "center",
+        }}
       >
         <AnimatePresence mode="wait">
           {isLoading && <Preloader />}
