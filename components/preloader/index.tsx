@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { opacity, slideUp } from "./anim";
 import { useRouter } from "next/router";
+import { detectMobile } from "@/data/utils";
+import { enqueueSnackbar } from "notistack";
 
 const words = [
   "Hello",
@@ -23,6 +25,16 @@ export default function Preloader() {
   useEffect(() => {
     setDimension({ width: window.innerWidth, height: window.innerHeight });
     router.push("/");
+    if (detectMobile()) {
+      enqueueSnackbar(
+        "For the best experience, checkout my portfolio on larger screens.",
+        {
+          persist: true,
+          variant: "info",
+        }
+      );
+    }
+    console.log(detectMobile());
   }, []);
 
   useEffect(() => {

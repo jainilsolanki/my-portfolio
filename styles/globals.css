@@ -125,3 +125,8 @@ svg:hover defs + path {
 .stroke-path {
   transition: stroke 300ms ease-in-out;
 }
+
+.notistack-MuiContent {
+  flex-wrap: nowrap !important;
+  background-color: #313131 !important;
+}

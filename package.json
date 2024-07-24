@@ -19,6 +19,7 @@
     "framer-motion": "^11.2.12",
     "lenis": "^1.1.6",
     "next": "14.2.4",
+    "notistack": "^3.0.1",
     "qss": "^3.0.0",
     "radix-ui": "^1.0.1",
     "react": "^18",
