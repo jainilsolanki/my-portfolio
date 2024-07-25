@@ -6,15 +6,32 @@ import { Slide } from "../skills/components/parallex-slider.component";
 import { useScroll } from "framer-motion";
 import { GITHUB } from "@/data/constants.data";
 
-
-const memorylens=[
-  { id: "memorylens-1.png", src: "/assets/portfolio/memorylens/memorylens-1.png" },
-  { id: "memorylens-2.png", src: "/assets/portfolio/memorylens/memorylens-2.png" },
-  { id: "memorylens-3.png", src: "/assets/portfolio/memorylens/memorylens-3.png" },
-  { id: "memorylens-4.png", src: "/assets/portfolio/memorylens/memorylens-4.png" },
-  { id: "memorylens-5.png", src: "/assets/portfolio/memorylens/memorylens-5.png" },
-  { id: "memorylens-6.png", src: "/assets/portfolio/memorylens/memorylens-6.png" },
-]
+const memorylens = [
+  {
+    id: "memorylens-1.png",
+    src: "/assets/portfolio/memorylens/memorylens-1.png",
+  },
+  {
+    id: "memorylens-2.png",
+    src: "/assets/portfolio/memorylens/memorylens-2.png",
+  },
+  {
+    id: "memorylens-3.png",
+    src: "/assets/portfolio/memorylens/memorylens-3.png",
+  },
+  {
+    id: "memorylens-4.png",
+    src: "/assets/portfolio/memorylens/memorylens-4.png",
+  },
+  {
+    id: "memorylens-5.png",
+    src: "/assets/portfolio/memorylens/memorylens-5.png",
+  },
+  {
+    id: "memorylens-6.png",
+    src: "/assets/portfolio/memorylens/memorylens-6.png",
+  },
+];
 
 const chatto = [
   { id: "chatto-1.png", src: "/assets/portfolio/chatto/chatto-1.png" },
@@ -22,6 +39,12 @@ const chatto = [
   { id: "chatto-3.png", src: "/assets/portfolio/chatto/chatto-3.png" },
   { id: "chatto-4.png", src: "/assets/portfolio/chatto/chatto-4.png" },
   { id: "chatto-5.png", src: "/assets/portfolio/chatto/chatto-5.png" },
+  { id: "chatto-6.png", src: "/assets/portfolio/chatto/chatto-6.png" },
+  { id: "chatto-7.png", src: "/assets/portfolio/chatto/chatto-7.png" },
+  { id: "chatto-8.png", src: "/assets/portfolio/chatto/chatto-8.png" },
+  { id: "chatto-9.png", src: "/assets/portfolio/chatto/chatto-9.png" },
+  { id: "chatto-10.png", src: "/assets/portfolio/chatto/chatto-10.png" },
+  { id: "chatto-11.png", src: "/assets/portfolio/chatto/chatto-11.png" },
 ];
 
 const quotes = [
@@ -127,8 +150,9 @@ const content = [
     githubUrl: `${GITHUB}/chatto-fe`,
   },
   {
-    title:"Memorylens AI",
-    description:"Memorylens AI is a React and Material-UI based web app that utilizes AI to simplify photo management. With this modern app, you can effortlessly find your photos among hundreds, saving time.",
+    title: "Memorylens AI",
+    description:
+      "Memorylens AI is a React and Material-UI based web app that utilizes AI to simplify photo management. With this modern app, you can effortlessly find your photos among hundreds, saving time.",
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
         <CardStack items={memorylens} />
