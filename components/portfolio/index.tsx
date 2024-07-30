@@ -135,7 +135,7 @@ const content = [
     banner: "/assets/portfolio/quotes-app/quotes-1.png",
     liveUrl: "https://minimal-quotes-app.vercel.app",
     githubUrl: `${GITHUB}/minimal-quotes-app`,
-  },
+  }, 
   {
     title: "Flux",
     description:
