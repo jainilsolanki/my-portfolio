@@ -6,33 +6,6 @@ import { Slide } from "../skills/components/parallex-slider.component";
 import { useScroll } from "framer-motion";
 import { GITHUB } from "@/data/constants.data";
 
-const memorylens = [
-  {
-    id: "memorylens-1.png",
-    src: "/assets/portfolio/memorylens/memorylens-1.png",
-  },
-  {
-    id: "memorylens-2.png",
-    src: "/assets/portfolio/memorylens/memorylens-2.png",
-  },
-  {
-    id: "memorylens-3.png",
-    src: "/assets/portfolio/memorylens/memorylens-3.png",
-  },
-  {
-    id: "memorylens-4.png",
-    src: "/assets/portfolio/memorylens/memorylens-4.png",
-  },
-  {
-    id: "memorylens-5.png",
-    src: "/assets/portfolio/memorylens/memorylens-5.png",
-  },
-  {
-    id: "memorylens-6.png",
-    src: "/assets/portfolio/memorylens/memorylens-6.png",
-  },
-];
-
 const chatto = [
   { id: "chatto-1.png", src: "/assets/portfolio/chatto/chatto-1.png" },
   { id: "chatto-2.png", src: "/assets/portfolio/chatto/chatto-2.png" },
@@ -149,18 +122,7 @@ const content = [
     liveUrl: "https://chatto-fe.vercel.app",
     githubUrl: `${GITHUB}/chatto-fe`,
   },
-  {
-    title: "Memorylens AI",
-    description:
-      "Memorylens AI is a React and Material-UI based web app that utilizes AI to simplify photo management. With this modern app, you can effortlessly find your photos among hundreds, saving time.",
-    content: (
-      <div className="h-full w-full flex items-center justify-center text-white">
-        <CardStack items={memorylens} />
-      </div>
-    ),
-    banner: "/assets/portfolio/memorylens/memorylens-3.png",
-    liveUrl: "https://app.memorylens.ai",
-  },
+
   {
     title: "Minimal Quotes App",
     description:
