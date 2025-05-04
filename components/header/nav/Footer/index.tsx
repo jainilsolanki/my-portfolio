@@ -11,7 +11,7 @@ export default function index() {
       <div className={styles.list}>
         <a onClick={downloadPdf}>Resume</a>
         <a href={`mailto:${EMAIL}`}>Email</a>
-        <a href={`tel:${CONTACT_NUMBER.replace(" ", "")}`}>Contact</a>
+        {/* <a href={`tel:${CONTACT_NUMBER.replace(" ", "")}`}>Contact</a> */}
         <a href={LINKEDIN} target="_blank">
           Linkedin
         </a>
