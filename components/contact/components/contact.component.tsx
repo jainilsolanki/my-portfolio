@@ -141,7 +141,7 @@ export function ContactComponent() {
             </span>
             {/* <BottomGradient /> */}
           </a>
-          <a
+{/*           <a
             className=" relative group/btn flex space-x-2 items-center justify-start  text-black rounded-md h-10 font-medium shadow-input"
             href={`tel:${CONTACT_NUMBER.replace(" ", "")}`}
           >
@@ -193,7 +193,7 @@ export function ContactComponent() {
               Ahmedabad, India
             </span>
             {/* <BottomGradient /> */}
-          </button>
+          </button> */}
 
           <button
             className=" relative group/btn flex space-x-2 items-center justify-start  w-full text-black rounded-md h-10 font-medium shadow-input"
