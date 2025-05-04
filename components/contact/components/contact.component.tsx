@@ -141,7 +141,7 @@ export function ContactComponent() {
             </span>
             {/* <BottomGradient /> */}
           </a>
-{/*           <a
+          {/* <a
             className=" relative group/btn flex space-x-2 items-center justify-start  text-black rounded-md h-10 font-medium shadow-input"
             href={`tel:${CONTACT_NUMBER.replace(" ", "")}`}
           >
@@ -163,9 +163,9 @@ export function ContactComponent() {
             <span className="text-neutral-300 text-sm hover:text-neutral-100">
               {CONTACT_NUMBER}
             </span>
-            {/* <BottomGradient /> */}
-          </a>
-          <button
+            <BottomGradient />
+          </a> */}
+          {/* <button
             className=" relative group/btn flex space-x-2 items-center justify-start  w-full text-black rounded-md h-10 font-medium shadow-input"
             type="submit"
           >
@@ -192,8 +192,8 @@ export function ContactComponent() {
             <span className="text-neutral-300 text-sm hover:text-neutral-100">
               Ahmedabad, India
             </span>
-            {/* <BottomGradient /> */}
-          </button> */}
+            <BottomGradient />
+          </button>  */}
 
           <button
             className=" relative group/btn flex space-x-2 items-center justify-start  w-full text-black rounded-md h-10 font-medium shadow-input"
