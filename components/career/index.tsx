@@ -44,18 +44,10 @@ export default function Career() {
               <div className="flex flex-col gap-10 ">
                 <div>
                   <p className="text-neutral-500 text-xl md:text-2xl max-w-3xl text-left font-bold">
-                    Front-End Engineer Trainee
-                  </p>
-                  <TextGenerateEffect words="WebOccult Technologies" />
-                  <TextGenerateEffect words="Jan 2023 - Aug 2023" />
-                </div>
-
-                <div>
-                  <p className="text-neutral-500 text-xl md:text-2xl max-w-3xl text-left font-bold">
                     Junior Front-End Engineer
                   </p>
                   <TextGenerateEffect words="WebOccult Technologies" />
-                  <TextGenerateEffect words="Sep 2023 - Feb 2025" />
+                  <TextGenerateEffect words="Jan 2023 - Feb 2025" />
                 </div>
 
                 <div>
