@@ -108,7 +108,105 @@ const vid_on = [
   },
 ];
 
+const swe = [
+  {
+    id: "swe-1.png",
+    src: "/assets/portfolio/swe/swe-1.png",
+  },
+  {
+    id: "swe-2.png",
+    src: "/assets/portfolio/swe/swe-2.png",
+  },
+  {
+    id: "swe-3.png",
+    src: "/assets/portfolio/swe/swe-3.png",
+  },
+  {
+    id: "swe-4.png",
+    src: "/assets/portfolio/swe/swe-4.png",
+  },
+  {
+    id: "swe-5.png",
+    src: "/assets/portfolio/swe/swe-5.png",
+  },
+  {
+    id: "swe-6.png",
+    src: "/assets/portfolio/swe/swe-6.png",
+  },
+  {
+    id: "swe-7.png",
+    src: "/assets/portfolio/swe/swe-7.png",
+  },
+  {
+    id: "swe-8.png",
+    src: "/assets/portfolio/swe/swe-8.png",
+  }
+]
+
+const skribbid = [
+  {
+    id: "skribbid-1.png",
+    src: "/assets/portfolio/skribbid/skribbid-1.png",
+  },
+  {
+    id: "skribbid-2.png",
+    src: "/assets/portfolio/skribbid/skribbid-2.png",
+  },
+  {
+    id: "skribbid-3.png",
+    src: "/assets/portfolio/skribbid/skribbid-3.png",
+  },
+  {
+    id: "skribbid-4.png",
+    src: "/assets/portfolio/skribbid/skribbid-4.png",
+  },
+  {
+    id: "skribbid-5.png",
+    src: "/assets/portfolio/skribbid/skribbid-5.png",
+  },
+  {
+    id: "skribbid-6.png",
+    src: "/assets/portfolio/skribbid/skribbid-6.png",
+  },
+  {
+    id: "skribbid-7.png",
+    src: "/assets/portfolio/skribbid/skribbid-7.png",
+  },
+  {
+    id: "skribbid-8.png",
+    src: "/assets/portfolio/skribbid/skribbid-8.png",
+  },
+  {
+    id: "skribbid-9.png",
+    src: "/assets/portfolio/skribbid/skribbid-9.png",
+  },
+  {
+    id: "skribbid-10.png",
+    src: "/assets/portfolio/skribbid/skribbid-10.png",
+  },
+  {
+    id: "skribbid-11.png",
+    src: "/assets/portfolio/skribbid/skribbid-11.png",
+  },
+  {
+    id: "skribbid-12.png",
+    src: "/assets/portfolio/skribbid/skribbid-12.png",
+  }
+]
+
 const content = [
+  {
+    title: "Star Wars Explorer",
+    description:
+      "The Star Wars Explorer is an interactive web app built with React and TypeScript that lets users explore the Star Wars universe via a sleek, responsive Mantine UI. It features routing, authentication, and integrates the SWAPI to display detailed info on characters, planets, vehicles, and more. Users can search, filter, paginate, and switch between light and dark themes for a smooth, customizable experience.",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <CardStack items={swe} />
+      </div>
+    ),
+    banner: "/assets/portfolio/swe/swe-1.png",
+    liveUrl: "https://star-wars-archive.vercel.app",
+  },
   {
     title: "Chatto",
     description:
@@ -122,7 +220,19 @@ const content = [
     liveUrl: "https://chatto-fe.vercel.app",
     githubUrl: `${GITHUB}/chatto-fe`,
   },
-
+  {
+    title: "Skribbid",
+    description:
+      "Draw, guess, and have fun with friends in this multiplayer drawing and guessing game. Create a room or join one to start playing!",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <CardStack items={skribbid} />
+      </div>
+    ),
+    banner: "/assets/portfolio/skribbid/skribbid-1.png",
+    liveUrl: "https://skribbid.vercel.app",
+    githubUrl: `${GITHUB}/skribbid`,
+  },
   {
     title: "Minimal Quotes App",
     description:
@@ -135,7 +245,7 @@ const content = [
     banner: "/assets/portfolio/quotes-app/quotes-1.png",
     liveUrl: "https://minimal-quotes-app.vercel.app",
     githubUrl: `${GITHUB}/minimal-quotes-app`,
-  }, 
+  },
   {
     title: "Flux",
     description:

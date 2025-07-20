@@ -26,7 +26,7 @@ export default function ImageParallax() {
       scale: scale6,
     },
     {
-      src: "/assets/portfolio/business-card-maker/b-c-m-logo.png",
+      src: "/assets/portfolio/swe/swe-logo.png",
       scale: scale4,
     },
     {
