@@ -1,9 +1,9 @@
 export function downloadPdf() {
-  var link = document.createElement("a");
-  link.href = "/JAINIL SOLANKI.pdf";
-  link.download = "JAINIL SOLANKI.pdf";
-  link.click();
-  // window.open("/resume.pdf", "_blank");
+  // var link = document.createElement("a");
+  // link.href = "/JAINIL SOLANKI.pdf";
+  // link.download = "JAINIL SOLANKI.pdf";
+  // link.click();
+  window.open("https://rxresu.me/jainilsolanki0704/jainil-solanki-resume", "_blank");
 }
 
 export function detectMobile() {

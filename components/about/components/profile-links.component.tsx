@@ -18,7 +18,7 @@ export function AboutLinks() {
       <p className="text-neutral-400 text-xl md:text-3xl max-w-3xl  text-left mb-10">
         Passionate{" "}
         <LinkPreview
-          url="/JAINIL SOLANKI.pdf"
+          url="https://rxresu.me/jainilsolanki0704/jainil-solanki-resume"
           imageSrc="/resume-preview-icon.png"
           className="font-bold"
           isStatic
@@ -62,9 +62,9 @@ type LinkPreviewProps = {
   quality?: number;
   layout?: string;
 } & (
-  | { isStatic: true; imageSrc: string }
-  | { isStatic?: false; imageSrc?: never }
-);
+    | { isStatic: true; imageSrc: string }
+    | { isStatic?: false; imageSrc?: never }
+  );
 
 const LinkPreview = ({
   children,
