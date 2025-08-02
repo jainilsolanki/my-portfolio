@@ -20,19 +20,19 @@ export default function Career() {
               <div className="flex flex-col gap-10 ">
                 <div>
                   <p className="text-neutral-500 text-xl md:text-2xl max-w-3xl text-left font-bold">
-                    Diploma in Computer Engineering
-                  </p>
-                  <TextGenerateEffect words="Government Polytechnic" />
-                  <TextGenerateEffect words="9.3 CGPA" />
-                  <TextGenerateEffect words="2018 - 2021" />
-                </div>
-                <div>
-                  <p className="text-neutral-500 text-xl md:text-2xl max-w-3xl text-left font-bold">
                     B.Tech Computer Science & Engineering
                   </p>
                   <TextGenerateEffect words="Nirma University" />
                   <TextGenerateEffect words="8.2 CGPA" />
                   <TextGenerateEffect words="2021 - 2023" />
+                </div>
+                <div>
+                  <p className="text-neutral-500 text-xl md:text-2xl max-w-3xl text-left font-bold">
+                    Diploma in Computer Engineering
+                  </p>
+                  <TextGenerateEffect words="Government Polytechnic A'bad" />
+                  <TextGenerateEffect words="9.3 CGPA" />
+                  <TextGenerateEffect words="2018 - 2021" />
                 </div>
               </div>
             </div>
@@ -44,18 +44,17 @@ export default function Career() {
               <div className="flex flex-col gap-10 ">
                 <div>
                   <p className="text-neutral-500 text-xl md:text-2xl max-w-3xl text-left font-bold">
-                    Junior Front-End Engineer
-                  </p>
-                  <TextGenerateEffect words="WebOccult Technologies" />
-                  <TextGenerateEffect words="Jan 2023 - Feb 2025" />
-                </div>
-
-                <div>
-                  <p className="text-neutral-500 text-xl md:text-2xl max-w-3xl text-left font-bold">
                     Front-End Engineer
                   </p>
                   <TextGenerateEffect words="Script Assist UK" />
                   <TextGenerateEffect words="Feb 2025 - Present" />
+                </div>
+                <div>
+                  <p className="text-neutral-500 text-xl md:text-2xl max-w-3xl text-left font-bold">
+                    Junior Front-End Engineer
+                  </p>
+                  <TextGenerateEffect words="WebOccult Technologies" />
+                  <TextGenerateEffect words="Jan 2023 - Feb 2025" />
                 </div>
               </div>
             </div>

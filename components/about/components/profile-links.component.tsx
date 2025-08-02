@@ -23,7 +23,7 @@ export function AboutLinks() {
           className="font-bold"
           isStatic
         >
-          Frontend Engineer
+          Full-Stack Engineer
         </LinkPreview>{" "}
         crafting delightful user experiences through clean code, with expertise
         in responsive web design and modern JavaScript frameworks.
